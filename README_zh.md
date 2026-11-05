@@ -9,9 +9,9 @@ FlowPilot 是一个基于 Flow Matching 的无人机机载自主导航框架。�
 
 本仓库开源仿真与推理部分的代码，目前提供 Docker 下的 Flightmare + RViz 闭环测试。训练代码与数据集不在本次发布范围内。
 
-论文：[arxiv]()
+论文：[arxiv](https://arxiv.org/abs/2608.00635)
 
-视频：[Bilibili](), [Youtobe]()
+视频：[Bilibili](https://www.bilibili.com/video/BV1CY446UExa/?vd_source=fabe7c1b05ad19c3df47deab4ef97207), [YouTube](https://youtu.be/1EOsVur6vIE)
 
 
 ## 安装

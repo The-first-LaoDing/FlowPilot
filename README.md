@@ -9,9 +9,9 @@ FlowPilot is a Flow Matching based framework for real-time onboard UAV navigatio
 
 This repository contains the simulation and inference code. We currently provide a closed-loop test in Flightmare and RViz inside Docker. Training code and datasets are not included.
 
-Paper: [arxiv]()
+Paper: [arxiv](https://arxiv.org/abs/2608.00635)
 
-Video: [Bilibili](), [YouTube]()
+Video: [Bilibili](https://www.bilibili.com/video/BV1CY446UExa/?vd_source=fabe7c1b05ad19c3df47deab4ef97207), [YouTube](https://youtu.be/1EOsVur6vIE)
 
 ## Installation
 
