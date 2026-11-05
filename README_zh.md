@@ -19,16 +19,17 @@ FlowPilot 是一个基于 Flow Matching 的无人机机载自主导航框架。�
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/flyingbitac/fm-gcopter-dataset.git
-cd fm-gcopter-dataset
+git clone https://github.com/flyingbitac/FlowPilot.git
+cd FlowPilot
 ```
 
 ### 2. 下载模型权重
 
-权重已上传至 [Hugging Face](https://huggingface.co/YuDinging/FlowPilot)，在仓库根目录执行：
+Phase 2 checkpoint 和统计量已上传至 [Hugging Face](https://huggingface.co/YuDinging/FlowPilot)，Wan2.2 VAE 权重来自官方 Wan2.2 仓库。在仓库根目录执行：
 
 ```bash
 hf download YuDinging/FlowPilot --include "ckpt/*" --local-dir .
+hf download Wan-AI/Wan2.2-TI2V-5B Wan2.2_VAE.pth --local-dir ckpt
 ```
 
 如果还没有 `hf` 命令，先执行 `pip install -U huggingface_hub`。
@@ -38,7 +39,7 @@ hf download YuDinging/FlowPilot --include "ckpt/*" --local-dir .
 | 文件 | 说明 |
 |---|---|
 | `ckpt/phase2/ckpt_final.pt` | Phase 2 推理 checkpoint |
-| `ckpt/Wan2.2_VAE.pth` | Wan2.2 VAE 权重，可以是软链接 |
+| `ckpt/Wan2.2_VAE.pth` | 官方 Wan2.2 仓库的 VAE 权重，可以是软链接 |
 | `ckpt/action_stats.pt` | 动作与状态归一化统计量 |
 | `ckpt/coeff_stats.pt` | Bernstein 系数归一化统计量 |
 

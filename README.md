@@ -18,16 +18,17 @@ Video: [Bilibili](), [YouTube]()
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/flyingbitac/fm-gcopter-dataset.git
-cd fm-gcopter-dataset
+git clone https://github.com/flyingbitac/FlowPilot.git
+cd FlowPilot
 ```
 
 ### 2. Download the checkpoints
 
-The checkpoints are available on [Hugging Face](https://huggingface.co/YuDinging/FlowPilot). Download them into the repository root:
+The checkpoints are available on [Hugging Face](https://huggingface.co/YuDinging/FlowPilot), and the Wan2.2 VAE weights come from the official Wan2.2 repository. Download them into the repository root:
 
 ```bash
 hf download YuDinging/FlowPilot --include "ckpt/*" --local-dir .
+hf download Wan-AI/Wan2.2-TI2V-5B Wan2.2_VAE.pth --local-dir ckpt
 ```
 
 If `hf` is not installed, run `pip install -U huggingface_hub` first.
@@ -37,7 +38,7 @@ The `--include "ckpt/*"` filter keeps the model card from overwriting this READM
 | File | Description |
 |---|---|
 | `ckpt/phase2/ckpt_final.pt` | Phase 2 inference checkpoint |
-| `ckpt/Wan2.2_VAE.pth` | Wan2.2 VAE weights, a symlink is fine |
+| `ckpt/Wan2.2_VAE.pth` | Wan2.2 VAE weights from the official Wan2.2 repository, a symlink is fine |
 | `ckpt/action_stats.pt` | Action and state normalization statistics |
 | `ckpt/coeff_stats.pt` | Bernstein coefficient normalization statistics |
 
