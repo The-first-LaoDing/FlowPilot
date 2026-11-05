@@ -1,6 +1,0 @@
-# Runtime dependencies (PyTorch simulation runtime)
-torch>=2.1.0
-numpy>=1.24
-einops>=0.7
-opencv-python>=4.8
-ruamel.yaml>=0.17
