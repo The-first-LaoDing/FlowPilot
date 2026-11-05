@@ -1,0 +1,18 @@
+# Keep Docker build contexts small. The simulation image does not COPY the
+# repository; it is mounted at runtime.
+.git
+.git/**
+dataset/
+runs/
+run/
+ckpt/
+export/
+ROS/build/
+ROS/devel/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/

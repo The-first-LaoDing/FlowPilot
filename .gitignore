@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Editor
+.vscode/
+*.swp
+
+# agent.md
+AGENTS.md
+
+# PX4
+PX4-Autopilot/
+
+# Worktrees
+.worktrees/
+
+# Flightmare binary (large, not tracked in git — copy manually)
+flightrender/
+
+# Runtime data
+run/
+
+# Local-only data/artifacts (not part of the public runtime release)
+dataset/
+
+# Model checkpoints / stats / VAE weights (large; downloaded or generated)
+ckpt/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.npz
+
+# ONNX export output
+export/
+
+# Local-only experiment artifacts
+runs/
+
